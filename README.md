@@ -1,6 +1,6 @@
-# Tailor Management App for ERPNext v15
+# Tailor Management App
 
-A comprehensive ERPNext application designed for managing bespoke tailoring businesses. This app provides a complete workflow from customer measurements to garment delivery, with automated document creation and Kanban-based production tracking.
+A comprehensive  application designed for managing bespoke tailoring businesses. This app provides a complete workflow from customer measurements to garment delivery, with automated document creation and Kanban-based production tracking.
 
 ## Features
 
@@ -29,9 +29,6 @@ A comprehensive ERPNext application designed for managing bespoke tailoring busi
 
 ## Installation
 
-### Prerequisites
-- ERPNext v15.x
-- Frappe Framework v15.x
 
 ### Install Steps
 
@@ -166,5 +163,3 @@ For support, feature requests, or contributions:
 MIT License - See LICENSE file for details.
 
 ---
-
-**Built for ERPNext v15** | **Tailor Management App v0.0.1**
