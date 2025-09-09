@@ -1,0 +1,33 @@
+{
+ "doctype": "Kanban Board",
+ "name": "Tailoring Job",
+ "reference_doctype": "Tailoring Job",
+ "field_name": "status",
+ "columns": [
+  {
+   "column_name": "Draft",
+   "indicator": "Red"
+  },
+  {
+   "column_name": "Confirmed", 
+   "indicator": "Blue"
+  },
+  {
+   "column_name": "In Production",
+   "indicator": "Orange"
+  },
+  {
+   "column_name": "Fitting Required",
+   "indicator": "Yellow"
+  },
+  {
+   "column_name": "Completed",
+   "indicator": "Green"
+  },
+  {
+   "column_name": "Delivered",
+   "indicator": "Green"
+  }
+ ],
+ "filters": []
+}

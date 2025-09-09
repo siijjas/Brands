@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "creation": "2025-01-09 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "garment_type",
+  "column_break_2",
+  "measurement_name",
+  "measurement_value",
+  "column_break_5",
+  "unit_of_measurement",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "garment_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Garment Type",
+   "options": "Shirt\nTrousers\nSuit Jacket\nWaistcoat\nDress\nSkirt\nBlouse\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "measurement_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Measurement Name",
+   "options": "Chest\nWaist\nHip\nShoulder Width\nArm Length\nInseam\nOutseam\nNeck\nThigh\nBack Length\nFront Length\nCuff\nCollar\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "measurement_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Measurement Value",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unit_of_measurement",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unit of Measurement",
+   "options": "inches\ncm\nmm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-09 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tailor Management",
+ "name": "Garment Measurement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

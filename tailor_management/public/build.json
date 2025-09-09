@@ -1,0 +1,10 @@
+{
+	"build_file_if_missing": 1,
+	"with_frappe": 1,
+	"css": [
+		"public/css/tailor_management.css"
+	],
+	"js": [
+		"public/js/tailor_management.js"
+	]
+}
