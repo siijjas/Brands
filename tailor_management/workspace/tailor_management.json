@@ -1,0 +1,115 @@
+{
+ "charts": [
+  {
+   "chart_name": "Tailoring Jobs by Status",
+   "chart_type": "Donut", 
+   "doctype": "Tailoring Job",
+   "filters_config": {},
+   "is_public": 1,
+   "number_of_groups": 0,
+   "report_name": "",
+   "roles": [],
+   "source": "Auto",
+   "timeseries": 0,
+   "type": "Donut",
+   "use_report_chart": 0,
+   "value_based_on": "",
+   "y_axis": []
+  }
+ ],
+ "content": "[{\"id\":\"wJgJk75FNy\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tailor Management</span>\",\"col\":12}},{\"id\":\"card_break_1\",\"type\":\"card_break\",\"data\":{\"text\":\"\",\"col\":12}},{\"id\":\"quick_list_1\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Tailoring Jobs\",\"col\":4}},{\"id\":\"quick_list_2\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Measurement Profiles\",\"col\":4}},{\"id\":\"quick_list_3\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Fitting Appointments\",\"col\":4}},{\"id\":\"card_break_2\",\"type\":\"card_break\",\"data\":{\"text\":\"\",\"col\":12}},{\"id\":\"chart_1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Tailoring Jobs by Status\",\"col\":6}},{\"id\":\"shortcut_1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Tailoring Job\",\"col\":3}},{\"id\":\"shortcut_2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Measurement Profile\",\"col\":3}}]",
+ "creation": "2025-01-09 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "briefcase",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Tailor Management",
+ "links": [
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tailoring Job",
+   "link_count": 0,
+   "link_to": "Tailoring Job",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Measurement Profile", 
+   "link_count": 0,
+   "link_to": "Measurement Profile",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fitting Appointment",
+   "link_count": 0,
+   "link_to": "Fitting Appointment", 
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-01-09 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tailor Management",
+ "name": "Tailor Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Tailoring Job",
+   "label": "Tailoring Jobs",
+   "list_name": "Tailoring Jobs"
+  },
+  {
+   "document_type": "Measurement Profile",
+   "label": "Measurement Profiles", 
+   "list_name": "Measurement Profiles"
+  },
+  {
+   "document_type": "Fitting Appointment",
+   "label": "Fitting Appointments",
+   "list_name": "Fitting Appointments"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "New Tailoring Job",
+   "link_to": "Tailoring Job",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "New Measurement Profile", 
+   "link_to": "Measurement Profile",
+   "stats_filter": "",
+   "type": "DocType"
+  }
+ ],
+ "title": "Tailor Management"
+}

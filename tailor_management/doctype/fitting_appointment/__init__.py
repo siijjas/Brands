@@ -1,0 +1,1 @@
+# Fitting Appointment DocType placeholder

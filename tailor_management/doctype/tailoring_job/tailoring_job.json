@@ -1,0 +1,284 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2025-01-09 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer",
+  "customer_name",
+  "column_break_3",
+  "measurement_profile",
+  "order_date",
+  "expected_delivery_date",
+  "section_break_7",
+  "garment_type",
+  "fabric_details",
+  "column_break_10",
+  "quantity",
+  "rate",
+  "total_amount",
+  "section_break_14",
+  "status",
+  "priority",
+  "column_break_17",
+  "progress_percentage",
+  "current_stage",
+  "section_break_20",
+  "special_instructions",
+  "internal_notes",
+  "section_break_23",
+  "sales_order",
+  "sales_invoice",
+  "column_break_26",
+  "auto_create_sales_order",
+  "auto_create_sales_invoice",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "TJ-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "measurement_profile",
+   "fieldtype": "Link",
+   "label": "Measurement Profile",
+   "options": "Measurement Profile"
+  },
+  {
+   "default": "Today",
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Order Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_delivery_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expected Delivery Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Garment Details"
+  },
+  {
+   "fieldname": "garment_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Garment Type",
+   "options": "Shirt\nTrousers\nSuit Jacket\nWaistcoat\nDress\nSkirt\nBlouse\n3-Piece Suit\n2-Piece Suit\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fabric_details",
+   "fieldtype": "Long Text",
+   "label": "Fabric Details"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "label": "Status & Progress"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nConfirmed\nIn Production\nFitting Required\nCompleted\nDelivered\nCancelled",
+   "reqd": 1
+  },
+  {
+   "default": "Medium",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nUrgent"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "progress_percentage",
+   "fieldtype": "Percent",
+   "label": "Progress Percentage"
+  },
+  {
+   "default": "Measurement",
+   "fieldname": "current_stage",
+   "fieldtype": "Select",
+   "label": "Current Stage",
+   "options": "Measurement\nCutting\nSewing\nFitting\nFinal Touches\nDelivery"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "special_instructions",
+   "fieldtype": "Long Text",
+   "label": "Special Instructions"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Long Text",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break",
+   "label": "Linked Documents"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_create_sales_order",
+   "fieldtype": "Check",
+   "label": "Auto Create Sales Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_create_sales_invoice",
+   "fieldtype": "Check",
+   "label": "Auto Create Sales Invoice"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tailoring Job",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Fitting Appointment",
+   "link_fieldname": "tailoring_job"
+  },
+  {
+   "link_doctype": "Sales Order",
+   "link_fieldname": "tailoring_job"
+  },
+  {
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "tailoring_job"
+  }
+ ],
+ "modified": "2025-01-09 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tailor Management",
+ "name": "Tailoring Job",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer_name",
+ "track_changes": 1
+}
