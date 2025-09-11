@@ -1,0 +1,1 @@
+// Placeholder for tailor_management.js
